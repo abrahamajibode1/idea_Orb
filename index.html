@@ -2,190 +2,207 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
    <main>
-    <section class="bg-[#1e1e1e]">
-        <div class="flex gap-x-70 text-white py-6 justify-center">
+    <header class="bg-[#1e1e1e]">
+        <nav class="flex max-w-[1400px] mx-0 gap-x-70 text-white py-6 justify-center">
             <img src="images/logo.png" alt="logo">
-            <nav>
-                <ul class="flex gap-x-6 cursor-pointer">
-                    <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Overview</a></li>
-                    <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Our Expertise</a></li>
-                    <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Our Approach</a></li>
-                    <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Work</a></li>
-                    <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+            
+            <button id="menu-btn" class="lg:hidden text-gray-200 focus:outline-none">
+                <svg class="w-15 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
 
-    <header class="bg-linear-to-r from-[#4d4682] from-10% via-[#5ec8b9] via-30% to-[#c6ff00]/35 to-100% ">
-        <div class="flex gap-x-8 justify-center py-[5em]">
-            <div class="">
-                <h1 class="text-white text-[2.8em] font-[Comfortaa] max-w-[600px] leading-[65px]">We <span class="text-[#c6ff00]">research</span> and <span class="text-[#c6ff00]">design</span> your ideas into market-ready digital solutions.</h1>
-                <p class="text-white text-[1.7em] font-thin font-[Inter] max-w-[570px] py-[0.8em]"> Our process offers a wide range of services to meet your specific need.</p>
-                <button class="bg-[#c6ff00] hover:bg-yellow-600 cursor-pointer text-black font-[Inter] px-6 py-4 rounded-md">
-                    GET A FREE CONSULTATION 
-                    <ion-icon name="arrow-forward-outline"></ion-icon>        
-                </button>
-            </div>
-            <div class="relative max-w-[380]">
-                <img src="images/ellipse.png" alt="image1" class="max-w-[360px] object-cover">
-                <img src="images/business_Plan_cuate.png" alt="image2" class="absolute top-0 left-0 w-[320px] mx-[1.5rem] my-[1.5rem]">
-            </div>
-        </div>
+            <ul class="hidden lg:flex lg:items-center gap-x-6 cursor-pointer">
+                <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Overview</a></li>
+                <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Our Expertise</a></li>
+                <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Our Approach</a></li>
+                <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Work</a></li>
+                <li class="hover:text-yellow-500 font-[Comfortaa]"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="flex justify-center gap-x-15 py-[5rem]">
-        <img src="images/bro.png" alt="image" class="max-w-[300px]">
-        <div>
-          <div class="max-w-[300px]">
-            <h1 class="text-[#1e1e1e] text-[2em] font-[500] font-[Comfortaa]">Our Mission</h1>
-            <p class="py-4 font-[Inter]">At IdeaOrb, Our mission is to build ideas with a bigger picture. We stay focused on using effective strategies to create new products that meets the needs of our clients and the market.</p>
-          </div>
+    <section class="bg-gradient-to-r from-[#4d4682] from-10% via-[#5ec8b9] via-30% to-[#c6ff00]/35 to-100% ">
+        <div class="max-w-[1400px] mx-0">
+            <div class="flex flex-col md:flex-row gap-x-8 justify-center items-center py-[5em]">
+                <div>
+                    <h1 class="text-white text-[2.3em] md:text-[2.5em] font-[Comfortaa] max-w-[500px] md:max-w-[500px] leading-[45px] md:leading-[65px]">We <span class="text-[#c6ff00]">research</span> and <span class="text-[#c6ff00]">design</span> your ideas into market-ready digital solutions.</h1>
+                    <p class="text-white text-[1em] text-[1.5em] md:text-[1.7em] font-[100] font-[Inter] max-w-[300px] md:max-w-[570px] py-[0.8em]"> Our process offers a wide range of services to meet your specific need.</p>
+                    <button class="bg-[#c6ff00] hover:bg-yellow-600 cursor-pointer text-black font-[Inter] px-6 py-4 rounded-md">
+                        GET A FREE CONSULTATION 
+                        <ion-icon name="arrow-forward-outline"></ion-icon>        
+                    </button>
+                </div>
+                <div class="relative max-w-[380px] hidden lg:block">
+                    <img src="images/ellipse.png" alt="image1" class="max-w-[360px] object-cover">
+                    <img src="images/business_Plan_cuate.png" alt="image2" class="absolute top-0 left-0 w-[320px] mx-[1.5rem] my-[1.5rem]">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="flex justify-center gap-x-35 py-[5rem]">
-        <div class="max-w-[300px]">
-          <h1 class="text-[#1e1e1e] text-[3em] font-[500] font-[Comfortaa]">Corporate Offering</h1>
-          <p class="py-4 font-[Inter]">Researching | Designing | Marketing</p>
-          <p class="font-[Inter]">We are a digital product agency that helps businesses improve the performance of their digital through a combination of relevant insight, strategies and idea. We explore business growth opportunities and have over 100 completed projects with unique digital experiences that matter.</p>
+    <section>
+        <div class="flex flex-col md:flex-row max-w-[1400px] mx-0 items-center justify-center gap-x-15 py-10 md:py-[5rem]"> 
+            <img src="images/bro.png" alt="image" class="max-w-[300px]">
+            <div>
+                <div class="max-w-[300px]">
+                    <h1 class="text-[#1e1e1e] text-[2em] font-[500] font-[Comfortaa]">Our Mission</h1>
+                    <p class="py-4 font-[Inter]">At IdeaOrb, Our mission is to build ideas with a bigger picture. We stay focused on using effective strategies to create new products that meets the needs of our clients and the market.</p>
+                </div>
+            </div>
         </div>
-        <img src="images/cuate.png" alt="image" class="max-w-[350px]">
     </section>
 
-    <section class="bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100%">
-        <h1 class="text-[3rem] text-[#c6ff00] text-center font-[Comfortaa] pt-15">Our Expertise</h1>
-        <p class="text-white text-center font-[Inter]">How we revolutionize clients idea in 3 steps:</p>
+    <section>
+        <div class="flex flex-col md:flex-row max-w-[1400px] mx-0 items-center justify-center gap-x-15 py-10 md:py-[5rem]">
+            <div class="max-w-[300px]">
+                <h1 class="text-[#1e1e1e] text-[3em] font-[500] font-[Comfortaa]">Corporate Offering</h1>
+                <p class="py-4 font-[Inter]">Researching | Designing | Marketing</p>
+                <p class="font-[Inter]">We are a digital product agency that helps businesses improve the performance of their digital through a combination of relevant insight, strategies and idea. We explore business growth opportunities and have over 100 completed projects with unique digital experiences that matter.</p>
+            </div>
+            <img src="images/cuate.png" alt="image" class="max-w-[350px] py-4">
+        </div>
+    </section>
 
-        <div class="flex flex-col gap-[10px] items-center pb-[5rem]">
-            <div class="flex w-[900px] bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden mt-10">
+    <section class="bg-white md:bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100%">
+        <div class="max-w-[1400px] mx-0">
+            <h1 class="text-[3rem] text-black md:text-[#c6ff00] text-center font-[Comfortaa] pt-15">Our Expertise</h1>
+            <p class="text-black md:text-white text-center font-[Inter]">How we revolutionize clients idea in 3 steps:</p>
+
+            <div class="flex flex-col gap-[10px] items-center pb-[5rem]">
+                <div class="flex flex-col lg:flex lg:flex-row w-[350px] lg:w-[900px] bg-white border-1 border-gray-300 lg:border-none lg:bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden mt-10">
   
-                <div class="flex flex-col justify-center items-center text-white text-center py-15">
-                    <img src="images/research.png" alt="image" class="mb-4 w-12 h-15">
-                    <h1 class="text-xl font-semibold font-[Comfortaa]">Research</h1>
-                </div>
-   
-                <div class="w-[2px] bg-white/15 self-stretch"></div>
-   
-                <div class="text-white font-[Inter] max-w-[600px] py-15">
-                    <p>
-                      Based on the needs of your customers and the nature of your business, we will help with a comprehensive research analysis. We then use expert analytical tools to provide a report containing thoughtful insight that leads to smart business decisions and actionable plans.
-                    </p>
-                    <h2 class="mt-4 font-semibold">
-                      <span class="font-bold">Competitive Analysis</span> |
-                      <span class="font-bold">Qualitative Analysis</span> |
-                      <span class="font-bold">Market Analysis</span>
-                    </h2>
-                </div>
-            </div>
-
-
-        
-           
-
-            <div class="flex w-[900px] bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden">
-                <div class="flex flex-col justify-center items-center text-white text-center py-15">
-                    <img src="images/design.png" alt="image" class="mb-4 w-15 h-15">
-                    <h1 class="text-xl font-bold font-[Comfortaa]">Digital Designs</h1>
-                </div>
-
-                <div class="w-[2px] bg-white/15 self-stretch"></div>
-                
-                <div class="text-white font-[Inter] max-w-[650px] py-15">
-                    <p>
-                        We believed that the most effective design isn't just something people see but is integrated into their everyday lives. We aim to make your company's name stand out from the crowd, increase brand recognition and offer a compelling experience with our designs. Our Branding and Digital Design services include the following:
-                    </p>
-                    <h2 class="mt-4 font-semibold">
-                        <span class="font-bold">Logo Design</span>|
-                        <span class="font-bold">Coorporate Branding</span>|
-                        <span class="font-bold">Social Media Designs|</span>
-                        <span class="font-bold">Brand Architecture & Portfolio Strategy</span>|
-                        <span class="font-bold">UX Design|UI Design</span>|
-                        <span class="font-bold">Landing Page Design</span>
-                    </h2>
-                </div>    
-            </div>
-
-
-            <div class="flex w-[900px] bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden">
-                <div class="flex flex-col justify-center items-center text-white text-center py-15">
-                    <img src="images/marketing.png" alt="image" class="mb-4 w-15 h-15">
-                    <h1 class="text-xl font-bold font-[Comfortaa]">Marketing</h1>
-                </div>
-
-                <div class="w-[2px] bg-white/15 self-stretch"></div>
-
-                <div class="text-white font-[Inter] max-w-[600px] py-15">
-                    <p>
-                       Our digital marketing tactics are unique and based on the customer's business goals and objectives. still, one foundational objective remains the same: We put our audience's need first to make them satisfied, loyal paying customers. Our marketing offers includes:
-                    </p>
-                    <h2 class="mt-4 font-semibold">
-                        <span class="font-bold">Market Reseach & Target Audience Analysis</span>|
-                        <span class="font-bold">Brand Planning & Communication</span>|
-                        <span class="font-bold">Strategic Marketing Plan</span>|
-                        <span class="font-bold">Plan Execution</span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-gray-50/25">
-        <div class="flex flex-col items-center justify-center text-center px-4 py-12">
-            <h1 class="text-black text-[2em] font-bold font-[Comfortaa]">Our Approach</h1>
-            <p class="font-[0.5rem] font-[Inter] max-w-[650px] leading-[30px]">
-                Whether your enterprise is start-up, small-medium, and established, our process offers a wide range of services to meet your specific need. Our team is highly experienced to take your company from concept to implementation.
-            </p>
-        </div>
-
-        <div class="max-w-2xl mx-auto grid grid-flow-col grid-col-3 md:grid-cols-3 gap-5">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-[250px]">
-                <img src="images/Pic.png" alt="image" class="w-full h-48 object-cover grayscale">
-                <div class="p-6">
-                    <h1 class="text-xl font-semibold font-Inter mb-2">Scoping</h1>
-                    <p class="text-gray-600 text-sm font-Inter max-w-[250px]">We start with information gathering and understanding your vision. Next, we walk through the journey that your users or customes will adopt your products and/or services</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-[250px]">
-                <img src="images/group_discuss.png" alt="image" class="w-full h-48 object-cover grayscale">
-                <div class="p-6">
-                    <h1 class="text-xl font-semibold font-Inter mb-2">Reseach</h1>
-                    <p class="text-gray-600 text-sm font-Inter max-w-[250px]">Our research and development team get to work to find our how we can help you penetrate the market sucessfully.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-[250px]">
-                <div class="">
-                    <img src="images/paper.png" alt="image" class="relative w-full h-48 object-cover grayscale">
-
-                    <div class="p-6">
-                        <h1 class="text-xl font-semibold font-Inter mb-2">Content development</h1>
-                        <p class="text-gray-600 text-sm font-Inter max-w-[250px]">Making use of insight and pointers from our research, we develop the right content for you and your target market</p>
+                    <div class="flex lg:flex-col justify-left lg:justify-center items-center text-center py-2 lg:py-15">
+                        <img src="images/research.png" alt="image" class="mb-4 w-8 h-10 lg:w-12 lg:h-13">
+                        <h1 class="text-black lg:text-white font-semibold font-[Comfortaa]">Research</h1>
                     </div>
-                </div>    
+   
+                    <div class="w-[2px] bg-white/15 self-stretch"></div>
+   
+                    <div class="text-black lg:text-white font-[Inter] max-w-[600px] py-2 lg:py-15">
+                        <p>
+                            Based on the needs of your customers and the nature of your business, we will help with a comprehensive research analysis. We then use expert analytical tools to provide a report containing thoughtful insight that leads to smart business decisions and actionable plans.
+                        </p>
+                        <h2 class="mt-4 font-semibold">
+                            <span class="font-bold">Competitive Analysis</span> |
+                            <span class="font-bold">Qualitative Analysis</span> |
+                            <span class="font-bold">Market Analysis</span>
+                        </h2>
+                    </div>
+                </div>
+
+          
+
+                <div class="flex flex-col lg:flex lg:flex-row w-[350px] lg:w-[900px] bg-white border-1 border-gray-300 lg:border-none lg:bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden">
+                    <div class="flex lg:flex lg:flex-col justify-left items-center text-center py-2 lg:py-15">
+                        <img src="images/design.png" alt="image" class="mb-4 w-8 h-10 lg:w-15 lg:h-13">
+                        <h1 class="text-xl text-black lg:text-white font-bold font-[Comfortaa]">Digital Designs</h1>
+                    </div>
+
+                    <div class="w-[2px] bg-white/15 self-stretch"></div>
+                
+                    <div class="text-black lg:text-white font-[Inter] max-w-[650px] py-2 lg:py-15">
+                        <p>
+                            We believed that the most effective design isn't just something people see but is integrated into their everyday lives. We aim to make your company's name stand out from the crowd, increase brand recognition and offer a compelling experience with our designs. Our Branding and Digital Design services include the following:
+                        </p>
+                        <h2 class="mt-4 font-semibold">
+                            <span class="font-bold">Logo Design</span>|
+                            <span class="font-bold">Coorporate Branding</span>|
+                            <span class="font-bold">Social Media Designs|</span>
+                            <span class="font-bold">Brand Architecture & Portfolio Strategy</span>|
+                            <span class="font-bold">UX Design|UI Design</span>|
+                            <span class="font-bold">Landing Page Design</span>
+                        </h2>
+                    </div>    
+                </div>
+
+                <div class="flex flex-col lg:flex lg:flex-row w-[350px] lg:w-[900px] bg-white border-1 border-gray-300 lg:border-none lg:bg-[#5ec8b9]/40 rounded-3xl px-10 gap-x-10 items-stretch relative overflow-hidden">
+                    <div class="flex lg:flex lg:flex-col justify-left lg:justify-center items-center text-center py-2 lg:py-15">
+                        <img src="images/marketing.png" alt="image" class="mb-4 w-8 h-10 lg:w-15 lg:h-13">
+                        <h1 class="text-xl text-black lg:text-white font-bold font-[Comfortaa]">Marketing</h1>
+                    </div>
+
+                    <div class="w-[2px] bg-white/15 self-stretch"></div>
+
+                    <div class="text-black lg:text-white font-[Inter] max-w-[600px] py-2 lg:py-15">
+                        <p>
+                            Our digital marketing tactics are unique and based on the customer's business goals and objectives. still, one foundational objective remains the same: We put our audience's need first to make them satisfied, loyal paying customers. Our marketing offers includes:
+                        </p>
+                        <h2 class="mt-4 font-semibold">
+                            <span class="font-bold">Market Reseach & Target Audience Analysis</span>|
+                            <span class="font-bold">Brand Planning & Communication</span>|
+                            <span class="font-bold">Strategic Marketing Plan</span>|
+                            <span class="font-bold">Plan Execution</span>
+                        </h2>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="grid grid-flow-col grid-col-3 gap-10">
-        <aside class="mx-auto bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100%">
+    <section class="bg-gray-50/2">
+        <div class="max-w-[1400px] mx-0">
+            <div class="flex flex-col items-center justify-center text-center py-15">
+                <h1 class="text-black text-[2em] font-bold font-[Comfortaa]">Our Approach</h1>
+                <p class="font-[0.5rem] font-[Inter] max-w-[400px] md:max-w-[650px] leading-[30px]">
+                    Whether your enterprise is start-up, small-medium, and established, our process offers a wide range of services to meet your specific need. Our team is highly experienced to take your company from concept to implementation.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex md:flex-row gap-5 justify-center items-center">
+                <div class="bg-white w-60 h-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="images/Pic.png" alt="image" class="w-full h-48 object-cover grayscale">
+                    <div class="p-6">
+                        <h1 class="text-xl font-semibold font-Inter mb-2">Scoping</h1>
+                        <p class="text-gray-600 text-sm font-Inter">We start with information gathering and understanding your vision. Next, we walk through the journey that your users or customers will adopt your products and/or services</p>
+                    </div>
+                </div>
+
+                <div class="bg-white w-60 h-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="images/group_discuss.png" alt="image" class="w-full h-48 object-cover grayscale">
+                    <div class="p-6">
+                        <h1 class="text-xl font-semibold font-Inter mb-2">Reseach</h1>
+                        <p class="text-gray-600 text-sm font-Inter max-w-[250px]">Our research and development team get to work to find out how we can help you penetrate the market successfully.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white w-60 h-100 rounded-lg shadow-md overflow-hidden">
+                    <div class="">
+                        <img src="images/paper.png" alt="image" class="relative w-full h-48 object-cover grayscale">
+
+                        <div class="p-6">
+                            <h1 class="text-xl font-semibold font-Inter mb-2">Content development</h1>
+                            <p class="text-gray-600 text-sm font-Inter max-w-[250px]">Making use of insight and pointers from our research, we develop the right content for you and your target market</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="w-[600px] md:w-[4100px] grid grid-cols-1 md:grid-cols-3 gap-x-10">
+        <div>
+            <div class="top-4 left-4 text-sm text-white pb-4">Branding</div>
+
+        <aside class="bg-[#1e1e1e] md:bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100% min-h-[100vh]">
             <div class="py-[5em]">
-                <div class="flex justify-center gap-x-10 border-b border-gray-500 leading-2 mx-[5rem] cursor-pointer">
-                    <h1 class="text-white text-[2em] font-bold font-[Comfortaa] pt-8 mx-5">
+                <div class="flex flex-col md:flex md:flex-row justify-center gap-x-[20rem] border-b border-gray-500 leading-2 mx-[5rem] cursor-pointer">
+                    <h1 class="text-white text-[2em] font-bold font-[Comfortaa] py-10 md:pt-8 mx-5">
                         Work
                     </h1>
 
                     <div>
                         <nav>
-                            <ul class="flex gap-x-6 text-gray-700 font-[Comfortaa] p-8 mr-[5rem]">
-                                <li class="text-[#c6ff00] underline underline-offset-30 decoration-3"><a href="#">Branding</a></li>
+                            <ul class="flex gap-x-3 md:gap-x-6 text-gray-700 font-[Comfortaa] p-8 mr-[5rem]">
+                                <li class="text-[#c6ff00] underline underline-offset-30 md:underline-offset-37 decoration-3"><a href="#">Branding</a></li>
                                 <li><a href="#">Marketing</a></li>
                                 <li><a href="#">Social Media</a></li>
                             </ul>
@@ -193,45 +210,237 @@
                     </div>
                 </div>
 
-                <div class="flex gap-x-5 px-5 py-[8rem]">
-                    <img src="images/img_1.png" alt="image" class="h-85">
+                <div class="flex flex-col gap-5 md:flex md:flex-row justify-center items-center gap-x-5 px-5 py-[5rem]">
+                    <img src="images/img_1.png" alt="image" class="w-45 md:60 h-50 md:h-85">
+                   
                     <div class="flex flex-col">
-                        <div class="flex gap-x-3">
+                        <div class="flex flex-col gap-5 md:flex md:flex-row gap-x-3">
                             <img src="images/img_2.png" alt="image" class="w-60">
-                            <img src="images/img_4.png" alt="image" class="h-40">
+                            <img src="images/img_4.png" alt="image" class="h-40 w-45">
                         </div>
-                        <div class="flex gap-x-3 pt-4">
-                            <img src="images/img_3.png" alt="image" class="h-40">
+                        <div class="flex flex-col gap-5 md:flex md:flex-row gap-x-3 pt-4">
+                            <img src="images/img_3.png" alt="image" class="h-40 w-45">
                             <img src="images/img_5.png" alt="image" class="w-60">
                         </div>
                     </div>
-                    <img src="images/img_6.png" alt="image" class="h-85">
+                    <img src="images/img_6.png" alt="image" class="w-50 md:w-45 h-45 md:h-85">
+                </div>
+            </div>       
+        </aside>
+        </div>
+
+        <div>
+            <div class="top-4 left-4 text-sm text-gray-500 pb-4">Marketing</div>
+
+        <aside class="bg-[#1e1e1e] md:bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100% min-h-screen">
+            <div class="py-[5em]">
+                <div class="flex flex-col md:flex md:flex-row justify-center gap-x-[20rem] border-b border-gray-500 leading-2 mx-[5rem] cursor-pointer">
+                        <h1 class="text-white text-[2em] font-bold font-[Comfortaa] py-10 md:pt-8 mx-5">
+                            Work
+                        </h1>
+
+                        <div>
+                            <nav>
+                                <ul class="flex gap-3 md:gap-x-6 text-gray-700 font-[Comfortaa] p-8 mr-[5rem]">
+                                    <li><a href="#">Branding</a></li>
+                                    <li class="text-[#c6ff00] underline underline-offset-30 md:underline-offset-37 decoration-3"><a href="#">Marketing</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-y-10 py-20">
+                <div class="flex flex-col md:flex md:flex-row gap-5 gap-x-20">
+                    <img src="images/Shekel.png" alt="image" class="w-45">
+                    <p class="max-w-[300px] md:max-w-[500px] text-[1em] text-white font-Inter">
+                        IdeaOrb Digital redesigned the Shekel Website, created quality video, training modules and client testimonial videos that clearly encapsulated the vision and mission of Shekel to drice efficiency for auto dealerships in emerging markets.
+
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex md:flex-row gap-5 gap-x-20">
+                    <img src="images/Dilaac.png" alt="image" class="w-45">
+                    <p class="max-w-[300px] md:max-w-[500px] text-[1em] text-white font-Inter">
+                        We worked with a team of Dilaac, a digital payment company based in Ivory Coast to fully revamp their brand, we performed a modest refresh of the visual identity and ensure the revamp gave a modern and trustworthy feel.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex md:flex-row gap-5 gap-x-20">
+                    <img src="images/Digital_play.png" alt="image" class="w-45">
+                    <p class="max-w-[300px] md:max-w-[500px] text-[1em] text-white font-Inter">
+                        We redesigned and built Digital play website as well as individual landing pages for departments in the company. IdeaOrb Digital created a seamless digital experience that enables users access each department's landing page via the parent website.
+                    </p>
+                </div>
+            </div>       
+                </aside>
+        </div>
+        
+
+        <div>
+            <div class="top-4 left-4 text-sm text-gray-500 pb-4">Social Media</div>
+
+        <aside class="bg-[#1e1e1e] md:bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100% min-h-[100vh]">
+            <div class="py-[5em]">
+                <div class="flex flex-col md:flex md:flex-row md:justify-center gap-x-[20rem] border-b border-gray-500 leading-2 mx-[5rem] cursor-pointer">
+                    <h1 class="text-white text-[2em] font-bold font-[Comfortaa] py-10 md:pt-8 mx-5">
+                        Work
+                    </h1>
+
+                    <div>
+                        <nav>
+                            <ul class="flex gap-3 md:gap-x-6 text-gray-700 font-[Comfortaa] p-8 mr-[5rem]">
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li class="text-[#c6ff00] underline underline-offset-30 md:underline-offset-37 decoration-3"><a href="#">Social Media</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex md:flex-row gap-x-5 justify-center items-center py-[3rem]">
+                <div class="flex flex-col">
+                    <div class="flex flex-col md:flex md:flex-row gap-5 md:gap-x-5">
+                        <img src="images/img_one.png" alt="image" class="h-50 w-45 md:w-50">
+                        <img src="images/img_two.png" alt="image" class="h-50 w-45 md:w-50">
+                    </div>
+                    <div class="flex flex-col md:flex md:flex-row gap-5 md:gap-x-5 pt-5">
+                        <img src="images/img_three.png" alt="image" class="h-50 w-45 md:w-50">
+                        <img src="images/img_four.png" alt="image" class="h-50 w-45 md:w-50">
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex flex-col md:flex md:flex-row gap-5 md:gap-x-5">
+                        <img src="images/img_five.png" alt="image" class="h-50 w-45 md:w-50 mt-5 md:mt-0">
+                        <img src="images/img_six.png" alt="image" class="h-50 w-45 md:w-50">
+                    </div>
+                    <div class="flex flex-col md:flex md:flex-row gap-5 md:gap-x-5 pt-5">
+                        <img src="images/img_seven.png" alt="image" class="h-50 w-45 md:w-50">
+                        <img src="images/img_eight.png" alt="image" class="h-50 w-45 md:w-50">
+                    </div>
                 </div>
             </div>
         </aside>
-
-        <aside class="max-w-7xl mx-auto bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100%">
-            <div>
-                menu
-            </div>
-
-            <div>
-                pictures
-            </div>
-        </aside>
-
-         <aside class="max-w-7xl mx-auto bg-linear-to-br from-[#4d4682] from-20% via-[#5ec8b9]/90 to-[#c6ff00]/50 to-100%">
-            <div>
-                menu
-            </div>
-
-            <div>
-                pictures
-            </div>
-        </aside>
+        </div>
     </section>
+
+    <section class="bg-[#1e1e1e]">
+        <div class="max-w-[1400px] mx-0">
+            <div class="flex justify-center p-[10rem]">
+                <div class="flex flex-col lg:flex lg:flex-row gap-x-20 border-none md:border-solid md:border-2 border-gray-700 rounded-lg p-20 max-w-[1000px] w-full mx-auto">
+                    <div class="mt-8">
+                        <h1 class="max-w-[400px] leading-none text-[2.5rem] lg:text-[3rem] text-[#c6ff00] font-medium font-Inter">
+                            Let's work on your project.
+                        </h1>
+                        <h2 class="text-[2.5rem] md:text-[3rem] text-[#fff] font-medium font-Inter">
+                            Get In Touch
+                        </h2>
+                        <p class="max-w-[300px] leading-none text-[1rem] md:text-[1.4rem] text-[#ffffff] font-[100] font-Inter">
+                            Leave us a message and we would respond immediately.
+                        </p>
+                    </div>
+
+                    <form class="flex flex-col">
+                        <div class="mt-5 md:mt-10 grid grid-cols-1 gap-x-6 sm:grid-cols-6">
+                            <div class="sm:col-span-3">
+                                <label for="name" class="block text-sm/6 font-medium text-gray-900"></label>
+                                <div class="mt-2">
+                                    <input type="text" name="name" id="name" placeholder="Name" autocomplete="name" class="block w-[15rem] rounded-sm bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-4">
+                                <label for="email" class="block text-sm/6 font-medium text-gray-900"></label>
+                                <div class="mt-2">
+                                    <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" class="block w-[15rem] rounded-sm bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                                </div>
+                            </div>
+                    
+
+                            <div class="sm:col-span-3">
+                            <label for="category" class="block text-sm/6 font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input type="text" name="category" id="category" autocomplete="category" placeholder="Category" class="block w-[15rem] rounded-sm bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                            </div>
+                        </div>
+
+                            <div class="col-span-full">
+                                <label for="message" class="block text-sm/6 font-medium text-gray-900"></label>
+                                <div class="mt-2">
+                                    <input type="text" name="Message" id="Message" autocomplete="Message" placeholder="Message" class="block w-[15rem] h-30 rounded-sm bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="bg-[#c6ff00] hover:bg-yellow-600 cursor-pointer text-black font-[Inter] p-1 w-[5rem] mt-2 rounded-md">
+                            send         
+                        </button>
+                    
+                    </form>
+                </div>
+            </div>
+
+            <div class="w-full relative">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
+                    <img src="images/arrow-up.png" alt="Back to top" class="w-10 h-10">
+                </div>
+
+                <footer class="bg-white w-[25rem] lg:w-[60rem] mx-auto items-center items-center rounded-t-[4rem] lg:rounded-t-[2rem]  mt-10 px-10 py-10">
+                    <div class="flex flex-col lg:flex lg:flex-row gap-8 gap-x-60 p-8">
+                        <img src="images/ideaorb__logo.png" alt="logo" class="h-10 w-30">
+                    
+                        <div class="flex flex-col lg:flex lg:flex-row gap-8 gap-x-15">
+                            <div>
+                                <h1 class="text-black text-[1em] font-semibold font-Comfortaa">SOCIALS</h1>
+                                <div class="flex pt-3 w-5">
+                                    <img src="images/linkedIn.png" alt="logo" class="">
+                                    <img src="images/twitter.png" alt="logo">
+                                    <img src="images/instagram.png" alt="logo">
+                                </div>
+                            </div>
+
+                                <div class="flex flex-col gap-y-3 whitespace-nowrap">
+                                    <h1 class="text-black text-[1em] font-semibold font-Comfortaa">
+                                        QUICK LINKS
+                                    </h1>
+                                    <div class="text-[0.8rem]">
+                                        <p>Overview</p>
+                                        <p class="pt-3">Our Expertise</p>
+                                        <p class="pt-3">Our Approach</p>
+                                        <p class="pt-3">Our Client</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col whitespace-nowrap">
+                                    <h1 class="text-black text-[1em] font-semibold font-Comfortaa">
+                                        CONTACTS
+                                    </h1>
+
+                                    <div class="text-[0.8rem]">
+                                        <p class="pt-3">
+                                            <a href="tel:+234906174022" class="text-black hover:underline">Phone: +234906174022</a>
+                                        </p>
+                                        <p class="pt-3">
+                                            <a href="mailto:info@ideaarb.com" class="text-black hover:underline">Email: info@ideaorb.com</a>
+                                        </p>
+                                        <p class="pt-3">
+                                            <a href="https://www.google.com/maps?q=Lagos,+Nigeria" target="_blank" class="text-black hover:underline">Address: Lagos, Nigeria <br>Toronto, Canada <br>Brimigham, United kindom
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+</html>
    </main>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
